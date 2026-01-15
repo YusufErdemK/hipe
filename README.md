@@ -3,6 +3,7 @@
 ![Version](https://img.shields.io/badge/version-0.0.2-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Python](https://img.shields.io/badge/python-3.13+-blue)
+![Linux](https://badgen.net/badge/Download/linux/?color=orange&icon=terminal&label)
 
 # HIPE: File Versioning CLI
 
