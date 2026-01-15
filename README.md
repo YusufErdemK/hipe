@@ -4,28 +4,28 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Python](https://img.shields.io/badge/python-3.13+-blue)
 
-# HIPE: Instagram Stats Viewer
+# HIPE: File Versioning CLI
 
-HIPE is a **Linux terminal tool** that fetches public Instagram profile statistics directly from your terminal. Quick, clean, and stylish. No login required!
+HIPE is a Linux terminal tool that tracks changes in your files directly from your terminal. Save versions, compare, and restore with ease – all without leaving the CLI. Quick, minimal, and practical.
 
 ---
 
 ## Features ✨
 
-- 📊 Display Instagram profile stats (followers, following, posts, bio) in the terminal
-- 💾 Export stats to JSON files for further analysis
-- ✅ No authentication required - works with public profiles
-- 🚀 Simple installation with `install.sh`
-- 📌 Version info with `--version`
+- 💾 Save snapshots of your files with a single command
+- 📜 View version history of any tracked file
+- 🔄 Restore files to any previous version
+- 🆚 Compare changes between versions with a diff
+- 🚀 Simple installation with install.sh
+- 📌 Version info with --version
 - 🎨 Clean, emoji-enhanced terminal output
-- ⚡ Lightning-fast profile information retrieval
 
 ---
 
 ## Installation 
 
 ```bash
-git clone https://github.com/USERNAME/hipe.git
+git clone https://github.com/YusufEremK/hipe.git
 cd hipe
 chmod +x install.sh
 ./install.sh
@@ -47,30 +47,45 @@ chmod +x install.sh
 
 ## Usage
 
-### Display profile stats in terminal
+### Save a file version
 ```bash
-hipe @username
+hipe save file.txt
 ```
 
-### Save stats to JSON file
+### View version history
 ```bash
-hipe @username output.json
+hipe history file.txt
 ```
 
-This creates a JSON file with all profile information.
+### Restore a previous version
+```bash
+hipe restore file.txt 3
+```
 
 ### Show version
 ```bash
 hipe --version
 ```
 
+### Compare two versions
+```bash
+hipe diff file.txt 2 5
+```
+
 ---
 
 ## Example Output
 
+```bash
+$ hipe history file.txt
+Version 1 - 2026-01-15 10:12
+Version 2 - 2026-01-15 12:45
+Version 3 - 2026-01-15 14:30
+```
+
 ## How It Works
 
-HIPE uses Instagram's public API endpoint to fetch profile information. It doesn't require any authentication or credentials - only accesses publicly available data.
+HIPE saves snapshots of your files in a local ```.hipe_versions``` directory. Each save is timestamped, allowing you to track changes, restore previous versions, and compare differences using built-in diff commands. Everything is local, fast, and requires no external services.
 
 ---
 
