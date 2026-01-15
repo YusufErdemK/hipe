@@ -74,6 +74,9 @@ hipe diff file.txt 2 5
 
 ---
 
+## Example Usage
+![example](readme/example.png)
+
 ## Example Output
 
 ```bash
