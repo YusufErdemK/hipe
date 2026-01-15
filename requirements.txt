@@ -1,0 +1,15 @@
+# HIPE: File Versioning CLI - Requirements
+# Python 3.13+
+
+# Core application - uses only Python standard library
+# No external dependencies required
+
+# Standard library modules:
+# - os, sys, json, shutil
+# - datetime, pathlib, difflib
+
+# Development dependencies (optional)
+pytest>=7.0.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
