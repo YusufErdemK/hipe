@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 from difflib import unified_diff
 
-__version__ = "1.0.0"
+__version__ = "0.0.2"
 VERSIONS_DIR = ".hipe_versions"
 
 
